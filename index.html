@@ -15,32 +15,72 @@
 </head>
 <body>
     <header class="header">
-        <div class="conteiner header-conteiner">
-            <nav class="header-nav">
+        <div class="conteiner">
+            <div class="header-conteiner">
+                <nav class="header-nav">
+                    <a class="logo" href="./index.html"><span class="logo-decor">Web</span>Studio</a>
+                    <ul class="header-nav-list list">
+                        <li class="header-item">
+                            <a class="header-link current" href="./index.html">Studio</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address>
+                    <ul class="header-contacts list">
+                        <li class="header-contacts-item">
+                            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                        </li>
+                        <li class="header-contacts-item">
+                            <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="conteiner header-conteiner-mobile">
                 <a class="logo" href="./index.html"><span class="logo-decor">Web</span>Studio</a>
-                <ul class="header-nav-list list">
-                    <li class="header-item">
-                        <a class="header-link current" href="./index.html">Studio</a>
+                <button class="burger-menu-button js-open-menu" type="button">
+                    <svg width="32" height="22" class="icon-burger-menu">
+                        <use href="./images/icons.svg#icon-burger-menu"></use>
+                    </svg>
+                </button>
+            </div>            
+        </div>
+        <div class="mobile-menu js-menu-container">
+            <button class="mobile-menu-close js-close-menu" type="button">
+                <svg class="icon-close-mobile-menu">
+                    <use href="./images/icons.svg#icon-close-mobile-menu"></use>
+                </svg>
+            </button>
+            <nav class="mobile-menu-nav">
+                <ul class="mobile-menu-nav-list list">
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link current" href="./index.html">Studio</a>
                     </li>
-                    <li class="header-item">
-                        <a class="header-link" href="./portfolio.html">Portfolio</a>
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link" href="./portfolio.html">Portfolio</a>
                     </li>
-                    <li class="header-item">
-                        <a class="header-link" href="#">Contacts</a>
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link" href="#">Contacts</a>
                     </li>
                 </ul>
             </nav>
             <address>
-                <ul class="header-contacts list">
-                    <li class="header-contacts-item">
+                <ul class="mobile-menu-contacts list">
+                    <li class="mobile-menu-contacts-item">
                         <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
                     </li>
-                    <li class="header-contacts-item">
+                    <li class="mobile-menu-contacts-item">
                         <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
-        </div>        
+        </div>
     </header>
     <main>
             <section class="hero">
@@ -323,9 +363,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>      
+            </section>       -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="conteiner">
             <div class="footer-content">
                 <div class="footer-content-logo">
@@ -432,6 +472,7 @@
             </form>
         </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
