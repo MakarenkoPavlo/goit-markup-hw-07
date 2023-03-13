@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <div class="conteiner header-conteiner">
             <nav class="header-nav">
                 <a class="logo" href="./index.html"><span class="logo-decor">Web</span>Studio</a>
@@ -33,7 +33,12 @@
                     </li>
                 </ul>
             </nav>
-            <address>
+            <button class="js-open-menu" type="button">
+                <svg width="32" height="22" class="icon-burger-menu">
+                    <use href="./images/icons.svg#icon-burger-menu"></use>
+                </svg>
+            </button>
+            <address class="header-address">
                 <ul class="header-contacts list">
                     <li class="header-contacts-item">
                         <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
@@ -44,43 +49,63 @@
                 </ul>
             </address>
         </div>
-         <div class="conteiner header-conteiner-mobile">
-            <a class="logo" href="./index.html"><span class="logo-decor">Web</span>Studio</a>
-            <button class="burger-menu-button js-open-menu" type="button">
-                <svg width="32" height="22" class="icon-burger-menu">
-                    <use href="./images/icons.svg#icon-burger-menu"></use>
-                </svg>
-            </button>
-        </div>
-        <div class="mobile-menu js-menu-container">
+        <div class="js-menu-container">
             <button class="mobile-menu-close js-close-menu" type="button">
                 <svg class="icon-close-mobile-menu">
                     <use href="./images/icons.svg#icon-close-mobile-menu"></use>
                 </svg>
             </button>
-            <nav class="mobile-menu-nav">
-                <ul class="mobile-menu-nav-list list">
-                    <li class="mobile-menu-item">
-                        <a class="mobile-menu-link current" href="./index.html">Studio</a>
-                    </li>
-                    <li class="mobile-menu-item">
-                        <a class="mobile-menu-link" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="mobile-menu-item">
-                        <a class="mobile-menu-link" href="#">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
+            <ul class="menu-nav-list list">
+                <li class="menu-item">
+                    <a class="menu-link current" href="./index.html">Studio</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Contacts</a>
+                </li>
+            </ul>
             <address>
-                <ul class="mobile-menu-contacts list">
-                    <li class="mobile-menu-contacts-item">
-                        <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                <ul class="menu-contacts list">
+                    <li class="menu-contacts-item">
+                        <a href="tel:+110001111111" class="menu-contacts-link">+11 (000) 111-11-11</a>
                     </li>
-                    <li class="mobile-menu-contacts-item">
-                        <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
-                    </li>
+                    <li class="menu-contacts-item">
+                        <a href="mailto:info@devstudio.com" class="menu-contacts-link">info@devstudio.com</a>
+                    </li>                    
                 </ul>
             </address>
+            <ul class="menu-socials-list list">
+                <li class="menu-socials-item">
+                    <a class="menu-socials-link" href="#">
+                        <svg class="menu-socials-icon">
+                            <use href="./images/icons.svg#icon-instagram-section"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-socials-item">
+                    <a class="menu-socials-link" href="#">
+                        <svg class="menu-socials-icon">
+                            <use href="./images/icons.svg#icon-twitter-section"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-socials-item">
+                    <a class="menu-socials-link" href="#">
+                        <svg class="menud-socials-icon">
+                            <use href="./images/icons.svg#icon-facebook-section"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-socials-item">
+                    <a class="menu-socials-link" href="#">
+                        <svg class="menu-socials-icon">
+                            <use href="./images/icons.svg#icon-linkedin-section"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
@@ -144,13 +169,13 @@
                 <h2 class="section-title">What are we doing</h2>
                 <ul class="working-list list">
                     <li class="working-item">
-                        <img src="./images/desctop.jpg" alt="desctop" width="360" height="300">
+                        <img srcset="./images/desctop.jpg 1x, ./images/desctop@2x.jpg 2x" src="./images/desctop.jpg" alt="desctop" width="360" height="300">
                     </li>
                     <li class="working-item">
-                        <img src="./images/listing.jpg" alt="listing" width="360" height="300">
+                        <img srcset="./images/listing.jpg 1x, ./images/listing@2x.jpg 2x" src="./images/listing.jpg" alt="listing" width="360" height="300">
                     </li>
                     <li class="working-item">
-                        <img src="./images/adaptiv.jpg" alt="adaptiv" width="360" height="300">
+                        <img srcset="./images/adaptiv.jpg 1x, ./images/adaptiv@2x.jpg 2x" src="./images/adaptiv.jpg" alt="adaptiv" width="360" height="300">
                     </li>
                 </ul>
             </div>
@@ -161,7 +186,7 @@
                 <ul class="comand-list list">
                     <li class="comand-card">
                         <article>
-                            <img class="comand-img" src="./images/productdesigner.jpg" alt="product designer"
+                            <img srcset="./images/productdesigner.jpg 1x, ./images/productdesigner@2x.jpg 2x" src="./images/productdesigner.jpg" alt="product designer"
                                 width="264" height="260">
                             <div class="comand-card-content">
                                 <h3 class="comand-title">Mark Guerrero</h3>
@@ -201,7 +226,7 @@
                     </li>
                     <li class="comand-card">
                         <article>
-                            <img class="comand-img" src="./images/frontenddeveloper.jpg" alt="frontend developer"
+                            <img srcset="./images/frontenddeveloper.jpg 1x, ./images/frontenddeveloper@2x.jpg 2x" src="./images/frontenddeveloper.jpg" alt="frontend developer"
                                 width="264" height="260">
                             <div class="comand-card-content">
                                 <h3 class="comand-title">Tom Ford</h3>
@@ -241,7 +266,7 @@
                     </li>
                     <li class="comand-card">
                         <article>
-                            <img class="comand-img" src="./images/marketing.jpg" alt="marketing" width="264"
+                            <img srcset="./images/marketing.jpg 1x, ./images/marketing@2x.jpg 2x" src="./images/marketing.jpg" alt="marketing" width="264"
                                 height="260">
                             <div class="comand-card-content">
                                 <h3 class="comand-title">Camila Garcia</h3>
@@ -281,7 +306,7 @@
                     </li>
                     <li class="comand-card">
                         <article>
-                            <img class="comand-img" src="./images/uidesigner.jpg" alt="ui designer" width="264"
+                            <img srcset="./images/uidesigner.jpg 1x, ./images/uidesigner@2x.jpg 2x" src="./images/uidesigner.jpg" alt="ui designer" width="264"
                                 height="260">
                             <div class="comand-card-content">
                                 <h3 class="comand-title">Daniel Wilson</h3>
@@ -322,7 +347,7 @@
                 </ul>
             </div>
         </section>
-        <section class="customers-section">
+        <section class="customers section">
             <div class="conteiner">
                 <h2 class="customers-title">Customers</h2>
                 <ul class="customers-icon-list list">
@@ -370,9 +395,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="conteiner">
             <div class="footer-content">
                 <div class="footer-content-logo">
@@ -432,7 +457,7 @@
             </div>
 
         </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close" type="button" data-modal-close>
